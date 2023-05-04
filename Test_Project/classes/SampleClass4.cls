@@ -8,12 +8,13 @@ public class SampleClass4 {
     
     Public Void SampleMethod1(String AccName, String AccountNumber){
         Account Acc = new Account();
+        System.debug('---Acc-1--'+Acc);
         Integer AccCount = AccountCount+1;
         Acc.Name = AccName+' '+AccCount;
         Acc.AccountNumber = AccountNumber;
         Try{
         	Insert Acc;
-            System.debug('---Acc---'+Acc);
+            System.debug('---Acc-2--'+Acc);
         }Catch(Exception e){
             System.debug('<++++++Exception++++++>'+e.getMessage());
             
